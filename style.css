@@ -1,3 +1,6 @@
+:root{
+  --winning-clr: rgba(5, 101, 139, 0.144);
+}
 body{
   margin: 0;
   padding: 0;
