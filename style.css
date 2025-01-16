@@ -1,5 +1,7 @@
 :root{
-  --winning-clr: rgba(5, 101, 139, 0.144);
+  --default-clr: rgba(0, 0, 0, 0.164);
+  --o-winning-clr: rgba(139, 5, 72, 0.15);
+  --x-winning-clr: rgba(7, 5, 139, 0.135);
 }
 body{
   margin: 0;
@@ -28,7 +30,7 @@ h1{
 .cell{
   width: 120px;
   height: 120px;
-  background-color: rgba(0, 0, 0, 0.164);
+  background-color: var(--default-clr);
   font-size: 1.6rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
@@ -36,7 +38,13 @@ h1{
   justify-content: center;
 }
 .cell:hover{
-  background-color: rgba(0, 0, 0, 0.089);
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.winning-x{
+  background-color: var(--x-winning-clr);
+}
+.winning-o{
+  background-color: var(--o-winning-clr);
 }
 #reset-btn{
   align-self: flex-end;
